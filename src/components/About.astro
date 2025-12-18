@@ -1,20 +1,25 @@
 ---
 import EmailCopy from "./EmailCopy.astro";
 import CVDonwload from "./CVDowload.astro";
+import { Image } from "astro:assets";
+
+import aboutImage from "../images/about.svg";
+import nameImage from "../images/name.svg";
+import taroPhoto from "../images/Taro2.webp";
+import utnBackground from "../images/UTN-background.webp";
 ---
 
 <section class="flex flex-col">
-  <img src="../src/images/about.svg" alt="" class="-mt-10 -z-200" />
+  <Image src={aboutImage} alt="" class="-mt-10 -z-20" />
   <div
-    class="bg-amber-50
-    w-full h-150 rounded-t-4xl -mt-5 flex flex-col gap-5 relative"
+    class="bg-amber-50 w-full h-150 rounded-t-4xl -mt-5 flex flex-col gap-5 relative"
   >
     <div
       class="flex flex-col lg:flex-row items-center mt-10 lg:ml-10 gap-5 w-full z-10"
     >
       <h1>
-        <img
-          src="../src/images/name.svg"
+        <Image
+          src={nameImage}
           alt="Lautaro Zubiri"
           class="w-80 lg:w-full pointer-events-none"
         />
@@ -39,15 +44,13 @@ import CVDonwload from "./CVDowload.astro";
       </aside>
     </div>
 
-    <!-- BACKGROUND -->
-    <img
-      
-      src="../src/images/Taro2.webp"
+    <Image
+      src={taroPhoto}
       alt="Foto de Lautaro Zubiri"
       class="rotate-y-180 absolute bottom-0 left-0 w-1/2 max-w-50 lg:max-w-100 z-1 pointer-events-none"
     />
-    <img
-      src="../src/images/UTN-background.webp"
+    <Image
+      src={utnBackground}
       alt="background"
       class="absolute bottom-0 right-0 w-full h-auto min-h-30 max-w-270 pointer-events-none z-0 opacity-50"
     />
