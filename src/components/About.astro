@@ -1,0 +1,55 @@
+---
+import EmailCopy from "./EmailCopy.astro";
+import CVDonwload from "./CVDowload.astro";
+---
+
+<section class="flex flex-col">
+  <img src="../src/images/about.svg" alt="" class="-mt-10 -z-200" />
+  <div
+    class="bg-amber-50
+    w-full h-150 rounded-t-4xl -mt-5 flex flex-col gap-5 relative"
+  >
+    <div
+      class="flex flex-col lg:flex-row items-center mt-10 lg:ml-10 gap-5 w-full z-10"
+    >
+      <h1>
+        <img
+          src="../src/images/name.svg"
+          alt="Lautaro Zubiri"
+          class="w-80 lg:w-full pointer-events-none"
+        />
+      </h1>
+      <aside
+        class="border-2 w-fit h-fit py-1 px-3 rounded-4xl border-detail text-detail uppercase"
+      >
+        Sobre mí
+      </aside>
+    </div>
+    <div class="mx-3 flex flex-col gap-5 z-10 lg:self-end">
+      <p class="text-sm lg:text-lg lg:max-w-180">
+        Soy desarrollador web FrontEnd y estudiante de Ingeniería en Sistemas en
+        la Universidad Tecnológica Nacional - FRLP. <br /><br />
+        Trabajo combinando mis habilidades técnicas con las habilidades blandas que
+        ofrece una carrera como la Ingeniería en Sistemas, lo que me permite gestionar
+        proyectos de manera integral y efectiva.
+      </p>
+      <aside class="flex justify-center gap-5 max-w-100">
+        <EmailCopy />
+        <CVDonwload />
+      </aside>
+    </div>
+
+    <!-- BACKGROUND -->
+    <img
+      
+      src="../src/images/Taro2.webp"
+      alt="Foto de Lautaro Zubiri"
+      class="rotate-y-180 absolute bottom-0 left-0 w-1/2 max-w-50 lg:max-w-100 z-1 pointer-events-none"
+    />
+    <img
+      src="../src/images/UTN-background.webp"
+      alt="background"
+      class="absolute bottom-0 right-0 w-full h-auto min-h-30 max-w-270 pointer-events-none z-0 opacity-50"
+    />
+  </div>
+</section>

@@ -1,0 +1,29 @@
+---
+const pdfPath = "/curriculum.pdf";
+const nombreDescarga = "Lautaro_Zubiri_CV.pdf";
+---
+
+<a
+  href={pdfPath}
+  download={nombreDescarga}
+  class="inline-flex items-center gap-2 px-4 py-1 h-fit border bg-amber-50 border-gray-400 rounded hover:bg-gray-200/70 text-gray-700 transition-colors text-lg font-medium decoration-none"
+  title="Descargar CV"
+>
+  <span>CV</span>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M8 12l4 4 4-4"></path>
+    <path d="M12 8v8"></path>
+  </svg>
+</a>

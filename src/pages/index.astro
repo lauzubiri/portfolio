@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css'
+import Hero from '../components/Hero.astro'
+import About from '../components/About.astro'
 
 ---
 
@@ -8,9 +11,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="description" content="Taro's Portfolio Website" />
+		 
+		<title>Taro - Portfolio</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-background flex flex-col overflow-x-hidden">
+		<Hero />
+		<About />
 	</body>
 </html>
